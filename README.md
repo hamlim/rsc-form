@@ -1,17 +1,33 @@
-# TODO
+# `rsc-form`
 
-Make sure to update this with the right documentation!
+A thin React client form component that automatically resets the form after submission.
 
 ## Installation:
 
 ```sh
-bun add TODO
+bun add rsc-form
 ```
 
 ## Usage:
 
 ```tsx
-// TODO
+import {Form} from 'rsc-form'
+
+function ServerComponent() {
+  async function handleSubmit(formData) {
+    "use server"
+    // do something
+  }
+  return (
+    <Form action={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" name="name" />
+      </label>
+      <button type="submit">Submit</button>
+    </Form>
+  )
+}
 ```
 
 ## Contributing:
