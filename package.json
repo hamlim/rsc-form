@@ -10,7 +10,7 @@
   "scripts": {
     "build": "swc ./src -d ./dist --ignore ./__tests__/**/*",
     "prepub": "bun run build",
-    "pub": "yarn npm publish --access public",
+    "pub": "npm publish --access public",
     "tsc": "tsc"
   },
   "devDependencies": {
